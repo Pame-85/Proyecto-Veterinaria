@@ -1,7 +1,7 @@
 import Paciente from "./Paciente";
 import "../css/ListadoPacientes.css";
 
-const ListadoPacientes = ({ pacientes, setPaciente }) => {
+const ListadoPacientes = ({ pacientes, setPaciente,eliminarPaciente }) => {
   return (
     <div
       className="md:w-1/2 lg:w-3/5 md:h-screen overflow-y-scroll"
@@ -21,6 +21,7 @@ const ListadoPacientes = ({ pacientes, setPaciente }) => {
               key={paciente.id}
               paciente={paciente}
               setPaciente={setPaciente}
+              eliminarPaciente={eliminarPaciente}
             />
           ))}
         </>
